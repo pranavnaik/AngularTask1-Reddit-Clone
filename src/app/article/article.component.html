@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+            <div class="panel-body">
+                <div class="panel panel-default" style="width:200px;height:120px;">
+                    <label style="margin-left:50px;">{{ article.votes }}</label>
+                    <br/>
+                    <div class="center">
+                        <label style="margin-left:40px;">Points</label>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="col-lg-10">
+
+          <div class="panel-body" align="left">
+                <div class="panel panel-default" >
+                   <a href="{{ article.link }}">
+                    {{ article.title }}
+                    </a>
+                  <div>({{ article.domain() }})</div>
+                  <ul style="list-style: none;">
+                      <li style="display:inline;">
+                          <a href (click)="voteUp()">
+                              <i class="fa fa-arrow-up"></i>
+                              upvote
+                          </a>
+                      </li>
+                      <li style="display:inline;">
+                        <a href (click)="voteDown()">
+                            <i class="fa fa-arrow-down"></i>
+                            downvote
+                        </a>
+                      </li>
+                  </ul>
+                 </div>
+            </div>
+            
+            
+
+
+
